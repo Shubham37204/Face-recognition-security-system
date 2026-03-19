@@ -1,0 +1,43 @@
+.head {
+  margin-top: 4.25pc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3pc;
+}
+
+.set {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3pc;
+  margin-bottom: -4pc;
+}
+
+.row-span-3,
+.col-span-2,
+.row-span-2 {
+  margin-right: 3pc;
+}
+
+.set {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Add white box with shadow */
+.set > div {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Responsive styles for screens with a width of 920px or less */
+@media (max-width: 920px) {
+  .set {
+    grid-template-columns: 1fr;
+    /* Change the layout to a single column */
+  }
+}

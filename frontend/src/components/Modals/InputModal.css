@@ -1,0 +1,47 @@
+input {
+    margin-right: 0.8pc;
+    width: 50%;
+    height: 9vh;
+}
+
+#InputBox{
+    border-radius: 15px;
+    font-size: 1.25rem;
+}
+
+#modal-prompt{
+    font-size: 1.55rem;
+    font-weight: 500;
+
+    background: #ffffff;
+    padding: 1.25rem;
+    border-radius: 8px;
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    max-width: 800px;
+    text-align: center;
+
+}
+
+#modal-ok-button {
+    margin-top: 1pc;
+    width: 15%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background: var(--color-primary);
+}
+
+#modal-ok-button:hover {
+    background: var(--color-primary-dark);
+}
+
+#modal-ok-button:active {
+    transform: scale(0.96);
+}
+
+.SubmitOk{
+    border-radius: 15px;
+}

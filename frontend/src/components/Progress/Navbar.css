@@ -1,0 +1,16 @@
+@media screen and (max-width: 900px) {
+    .hidden.sm\\:block {
+        display: none !important;
+    }
+    
+    #mobile-menu a {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #374151;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+}

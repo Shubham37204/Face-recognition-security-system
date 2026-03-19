@@ -1,0 +1,14 @@
+section#Projects {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 5.5pc;
+}
+
+@media screen and (max-width: 1170px) {
+  section#Projects {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

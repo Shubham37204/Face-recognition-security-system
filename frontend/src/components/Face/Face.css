@@ -1,0 +1,10 @@
+.webcam {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.cap {
+    display: flex;
+    height: 14pc;
+}

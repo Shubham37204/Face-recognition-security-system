@@ -1,0 +1,2 @@
+# Backend Git Ignore.
+backend/__pycache__/

@@ -1,0 +1,25 @@
+We have used these modules in our text to voice generator. 
+
+1. gTTS Module.
+    command :- "pip install gTTS" 
+
+    This Module uses internet to create the Voice generator.
+
+2. playsound Module.
+    command :- "pip install playsound"
+
+    The installation of this module, creates multiple problems, so try to install it from the Anaconda Prompt, it was able to get it to install. 
+
+    Other Thing that can be done is, we can install the older version of the same module.
+        command :- "pip uninstall playsound"  (To first uninstall it.)
+                   "pip install playsound == 1.2.2"       (then install the older version.)
+
+ 
+3. pyttsx3 Mdoule.
+    command :- "pip install pyttsx3"
+
+    This Module is for the offline use of the Voice generator.
+
+4. sys Module.
+    
+    This Module is used for getting Command Line arguments, which in this case is the language code for the translation process.

@@ -1,0 +1,24 @@
+#modal-yes-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#modal-no-button {
+    background-color: #007f67;
+    color: #fff;
+}
+
+.modal-button {
+    padding: 8px 16px;
+    border: none;
+    margin-top: 1.5pc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #009579;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.modal-button:hover {
+    opacity: 0.9;
+}

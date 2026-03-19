@@ -1,0 +1,18 @@
+.btn {
+  align-items: center;
+  margin-left: 1pc;
+  margin-top: -1pc;
+  margin-right: -10pc;
+}
+
+.span {
+  margin-top: 7pc;
+  margin-left: -32pc;
+}
+
+@media screen and (max-width: 900px) {
+  .flex-items-center {
+    justify-content: center;
+    align-items: center;
+  }
+}

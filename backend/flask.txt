@@ -1,0 +1,73 @@
+Creating a Virtual Environment:-
+--------------------------------
+
+    Command:- "python -m venv venv"     
+
+    The 2nd "Venv" is the path of the place where we want to install the virutal Environment folder.
+
+------------------------------------------------------------------------------
+
+Activating the Virtual Environment:-
+------------------------------------
+
+    Command:- ".venv\Scripts\activate"
+
+------------------------------------------------------------------------------
+
+Deactivating the Virtual Environment:-
+---------------------------------------
+
+    Command:- "deactivate"
+
+------------------------------------------------------------------------------  
+
+Running the "Flask Server":-
+--------------------------
+
+Before Running the Flask server we need to make sure we are in the same Folder or Directory as the Flask file to run the flask.
+
+Now to run the flask server we first need to set the file as flask_app.
+
+Command:-   
+
+    1. "set FLASK_APP=server.py"
+    2. "set FLASK_APP=server"
+
+NOTE:- "We need to name this 'flask_app' as the name of the file where the flask program is stored. It cannot be named anything else as it might give error."
+
+------------------------------------------------------------------------------
+
+Now to Start / Run the "Flask server" we need the write 'any' of the following commands.
+
+Commands:-
+
+    1. "python -m flask --app .\server.py run"    
+    2. "python -m flask --app server.py run"    
+    3. "flask --app server.py run"
+    4. "flask --app server run"
+
+------------------------------------------------------------------------------
+
+Running the 'Flask Server' in "Debug Mode":-
+----------------------------------------
+
+Before Running the Flask server we need to make sure we are in the same Folder or Directory as the Flask file to run the flask.
+
+Now to run the flask server we first need to set the file as flask_env.
+
+    Command:-   "set FLASK_ENV=development"
+
+This debug mode allows the server to detect the changes made to the flask file and it automatically updates itself to the current version of the file.
+
+This allows us to view changes on the server or test the server without having to restart the server everytime we change anything.
+
+------------------------------------------------------------------------------
+
+Now to Start / Run the "Flask 'debug' server" we need the write 'any' of the following commands.
+
+Commands:-
+
+    1. "python -m flask --app .\server.py run --debug"    
+    2. "python -m flask --app server.py run --debug"    
+    3. "flask --app server.py run --debug"
+    4. "flask --app server run --debug"

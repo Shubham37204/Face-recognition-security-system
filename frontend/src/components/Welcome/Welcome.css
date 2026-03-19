@@ -1,0 +1,172 @@
+/* Keyframe animation for particles moving */
+@keyframes moveParticles {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-200px) rotate(360deg);
+    }
+}
+  
+/* Styling for particles */
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    animation: moveParticles 10s linear infinite;
+}
+  
+/* Keyframe animation for text appearing */
+@keyframes appearText {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+/* Styling for text */
+#welcomeText span {
+    display: inline-block;
+    opacity: 0;
+    animation: appearText 0.5s forwards;
+}
+  
+/* Delay each letter by 0.1s */
+#welcomeText span:nth-child(1) { animation-delay: 0.1s; }
+#welcomeText span:nth-child(2) { animation-delay: 0.2s; }
+#welcomeText span:nth-child(3) { animation-delay: 0.3s; }
+#welcomeText span:nth-child(4) { animation-delay: 0.4s; }
+#welcomeText span:nth-child(5) { animation-delay: 0.5s; }
+#welcomeText span:nth-child(6) { animation-delay: 0.6s; }
+#welcomeText span:nth-child(7) { animation-delay: 0.7s; }
+#welcomeText span:nth-child(8) { animation-delay: 0.8s; }
+#welcomeText span:nth-child(9) { animation-delay: 0.9s; }
+#welcomeText span:nth-child(10) { animation-delay: 1s; }
+  
+/* Additional styling */
+#hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.names-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-box {
+    flex: 1;
+    margin: 0 1rem; /* Add margin for spacing */
+    text-align: center; /* Center the text */
+    font-weight: bold;
+}
+
+.name {
+    font-size: 24px;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    margin-top: 10px; /* Add space between name and card */
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Make the card content stack vertically */
+}
+
+/* Different animations for names */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+     60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.name:nth-child(1) {
+    animation-name: slideIn;
+}
+
+.name:nth-child(2) {
+    animation-name: fadeIn;
+}
+
+.name:nth-child(3) {
+    animation-name: bounceIn;
+}

@@ -1,0 +1,74 @@
+.particle-container {
+    height: 35vh;
+    overflow: hidden; 
+    position: relative;
+}
+
+.detail{
+    font-size: 2rem;
+}
+
+/* Start.css */
+
+#start-container {
+    background: linear-gradient(to bottom, #0099FF, #66CCFF);
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    margin-top: 4pc;
+    animation: backgroundAnimation 10s infinite alternate; /* Add animation */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(to bottom, #0099FF, #66CCFF);
+    }
+    100% {
+        background: linear-gradient(to bottom, #66CCFF, #0099FF);
+    }
+}
+
+.start-heading {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    animation: textAnimation 2s infinite alternate; /* Add animation */
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.start-button {
+    background-color: #005580;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.start-button:hover {
+    background-color: #0073e6;
+    transform: scale(1.05);
+}

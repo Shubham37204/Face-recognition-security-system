@@ -1,0 +1,48 @@
+.bg-image1 {
+  background-image: url('../images/CreateAccount.jpg');
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center;
+}
+
+.bg-image2 {
+  background-image: url('../images/Search.jpg');
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center;
+}
+
+.bg-image3 {
+  background-image: url('../images/ModelGallery.jpg');
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center;
+}
+
+.bg-image4 {
+  background-image: url('../images/edit.jpg');
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center;
+}
+
+.bg-image5 {
+  background-image: url('../images/delete.jpg');
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center;
+}
+
+.bg-image6 {
+  background-image: url('../images/Timeline_clock.jpg');
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center;
+}
+
+.bg-image7 {
+  background-image: url('../images/Login_timeline.png');
+  background-size: cover;
+  background-clip: border-box;
+  background-position: center;
+}
